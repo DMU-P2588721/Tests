@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <title>Social | Blackpink</title>
+  </head>
+
+  <body>
+
+    <header>
+      <img class="title" src="Image/Blackpink-Logo.png">
+    </header>
+
+    <!-- The navigation bar with the active page as Social -->
+    <div class="navbar" id="mynavbar">
+      <a href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="members.html">Members</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="members.html#Lisa">Lisa</a>
+          <a href="members.html#Jennie">Jennie</a>
+          <a href="members.html#Jisoo">Jisoo</a>
+          <a href="members.html#Rose">Rose</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="music.html">Discography</a></button>
+        <div class="dropdown-content">
+          <a href="music.html#square-one">Square One</a>
+          <a href="music.html#square-two">Square Two</a>
+          <a href="music.html#square-up">Square Up</a>
+          <a href="music.html#kil-this-love">Kill This Love</a>
+          <a href="music.html#the-album">The Album</a>
+        </div>
+      </div>
+      <a href="tour.html">Tour</a>
+      <a href="social.html">Social</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div class="section" style="text-align: center">
+      Coming soon
+    </div>
+
+    <script>
+      function myFunction() {
+      var x = document.getElementById("mynavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+        }
+      }
+    </script>
+    <!-- Footer for the website-->
+    <footer>
+      <p>TECH1015 Coursework 2    |   Jarick Boyce - P2588721 | Information from Wikipedia</p>
+    </footer>
+
+  </body>
+</html>

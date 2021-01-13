@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <title>Members | Blackpink</title>
+  </head>
+
+  <body>
+
+    <header>
+      <img class="title" src="Image/Blackpink-Logo.png">
+    </header>
+
+    <!-- The navigation bar with the active page as Members-->
+    <div class="navbar" id="mynavbar">
+      <a href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="members.html">Members</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="members.html#Lisa">Lisa</a>
+          <a href="members.html#Jennie">Jennie</a>
+          <a href="members.html#Jisoo">Jisoo</a>
+          <a href="members.html#Rose">Rose</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="music.html">Discography</a></button>
+        <div class="dropdown-content">
+          <a href="music.html#square-one">Square One</a>
+          <a href="music.html#square-two">Square Two</a>
+          <a href="music.html#square-up">Square Up</a>
+          <a href="music.html#kil-this-love">Kill This Love</a>
+          <a href="music.html#the-album">The Album</a>
+        </div>
+      </div>
+      <a href="tour.html">Tour</a>
+      <a href="social.html">Social</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- An extra navagation bar to jump to each cast member on the page -->
+    <nav class="nav2">
+      <a href="#Lisa">Lisa</a>
+      <a href="#Jennie">Jennie</a>
+      <a href="#Jisoo">Jisoo</a>
+      <a href="#Rose">Rose</a>
+    </nav>
+
+    <!-- The side by side views for the cast sections, in a different way to the home page.
+      The code is identical for each cast section with the only difference being the image / information-->
+    <div class="row">
+      <!-- The <a name=""> is used for the buttons in the second navagation bar to direct the links -->
+      <a name="Lisa"></a>
+      <h2>Lisa</h2>
+      <!-- The cast member's image on the left with the alt text if the image does not work-->
+      <div class="column left">
+        <img src="Image/lisa.jpg" alt="Image of Blackpink Lisa">
+      </div>
+
+      <!-- The description of the cast member on the right-->
+      <div class="column right">
+        <p>Jada Koren Pinkett Smith is an American actress, screenwriter, producer,
+          talk show host, businesswoman, and an occasional singer-songwriter.</p>
+          <p>She plays Lisa Cooper, a nurse and mum</p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <a name="Jennie"></a>
+      <h2>Jennie</h2>
+      <div class="column left">
+        <img src="Image/jennie.jpg" alt="Image of Blackpink Jennie">
+      </div>
+
+      <div class="column right">
+        <p>Dana Elaine Owens better known by her stage name Queen Latifah,
+          is an American rapper, singer, songwriter, actress, and producer.</p>
+        <p>She plays Sasha Franklin, an internet gossip reporter</p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <a name="Jisoo"></a>
+      <h2>Jisoo</h2>
+      <div class="column left">
+        <img src="Image/jisoo.jpg" alt="Image of Blackpink Jisoo">
+      </div>
+
+      <div class="column right">
+        <p>Regina Lee Hall is an American actress. She has appeared in numerous
+          television series, most prominently in a regular role on the comedy series Ally McBeal (2001–2002)
+          and Black Monday (2019–present).</p>
+        <p>She plays Ryan Pierce, a bestselling author</p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <a name="Rose"></a>
+      <h2>Rose</h2>
+      <div class="column left">
+        <img src="Image/Rose.jpg" alt="Image of Blackpink Rose">
+      </div>
+
+      <div class="column right">
+        <p>Tiffany Sara Cornilia Haddish is an American actress, comedian, and author.</p>
+        <p>She plays Dina, the loud happy-go-lucky friend</p>
+      </div>
+    </div>
+
+    <script>
+      function myFunction() {
+      var x = document.getElementById("mynavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+        }
+      }
+    </script>
+
+    <!-- Footer for the website-->
+    <footer>
+      <p>TECH1015 Coursework 2    |   Jarick Boyce - P2588721 | Information from Wikipedia</p>
+    </footer>
+
+  </body>
+</html>
