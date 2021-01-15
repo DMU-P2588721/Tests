@@ -44,25 +44,45 @@
 
     <div class="grid-container" style="text-align: center">
 
-      <a name="square-one">
-      <img src="Image/square-one.jpg" alt="Blackpink Square One Cover (2016)">
-      </a>
+      <div class="hovcontainer">
+        <a name="square-one"></a>
+        <img src="Image/square-one.jpg" alt="Blackpink Square One Cover (2016)">
+        <div class="hovoverlay">
+          <div class="hovtext">Square One (2016)</div>
+        </div>
+      </div>
 
-      <a name="square-two">
-      <img src="Image/square-two.jpg" alt="Blackpink Square Cover (2016)">
-      </a>
+      <div class="hovcontainer">
+        <a name="square-two"></a>
+        <img src="Image/square-two.jpg" alt="Blackpink Square Two Cover (2016)">
+        <div class="hovoverlay">
+          <div class="hovtext">Square Two (2016)</div>
+        </div>
+      </div>
 
-      <a name="square-up">
-      <img src="Image/square-up.jpg" alt="Blackpink Square Up Cover (2018)">
-      </a>
+      <div class="hovcontainer">
+        <a name="square-up"></a>
+        <img src="Image/square-up.jpg" alt="Blackpink Square Up Cover (2018)">
+        <div class="hovoverlay">
+          <div class="hovtext">Square Up (2018)</div>
+        </div>
+      </div>
 
-      <a name="kill-this-love">
-      <img src="Image/kill-this-love.jpg" alt="Blackpink Kill This Love Cover (2019)">
-      </a>
+      <div class="hovcontainer">
+        <a name="kill-this-love"></a>
+        <img src="Image/kill-this-love.jpg" alt="Blackpink Kill This Love Cover (2019)">
+        <div class="hovoverlay">
+          <div class="hovtext">Kill This Love (2019)</div>
+        </div>
+      </div>
 
-      <a name="the-album">
-      <img src="Image/the-album.jpg" alt="Blackpink Square Cover">
-      </a>
+      <div class="hovcontainer">
+        <a name="the-album"></a>
+        <img src="Image/the-album.jpg" alt="Blackpink The Album Cover">
+        <div class="hovoverlay">
+          <div class="hovtext"> The Album (2020)</div>
+        </div>
+      </div>
 
     </div>
 
@@ -73,6 +93,28 @@
         x.className += " responsive";
       } else {
         x.className = "navbar";
+        }
+      }
+    </script>
+
+    <script>
+      /* When the user clicks on the button,
+      toggle between hiding and showing the dropdown content */
+      function myFunction2() {
+        document.getElementById("myDropdown2").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn2')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content2");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
         }
       }
     </script>

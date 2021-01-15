@@ -31,6 +31,9 @@ header {
 
 h1, h2 {
   text-align: center;
+  color: #F3A7BA;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /*THE NAVIGATION BAR*/
@@ -166,10 +169,76 @@ nav a {
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+  font-size: 20px;
+}
+
+
+.hovcontainer {
+  position: relative;
+}
+
+.hovoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hovcontainer:hover .hovoverlay {
+  opacity: 1;
+}
+
+.hovtext {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.dropbtn2 {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropbtn2:hover, .dropbtn2:focus {
+  display: block;
+}
+
+.dropdown2 {
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: black;
+  width: 20%;
+  overflow: none;
+  text-align: center;
+  padding: 10px;
+}
+
+.show {
+  display: flex;
+  flex-grow: 1
 }
 
 /*FORMAT FOR SIDE BY SIDE*/
