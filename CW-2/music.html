@@ -21,20 +21,18 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="members.html#Lisa">Lisa</a>
           <a href="members.html#Jennie">Jennie</a>
           <a href="members.html#Jisoo">Jisoo</a>
+          <a href="members.html#Lisa">Lisa</a>
           <a href="members.html#Rose">Rose</a>
         </div>
       </div>
       <div class="dropdown">
         <button class="dropbtn"><a href="music.html">Discography</a></button>
         <div class="dropdown-content">
-          <a href="music.html#square-one">Square One</a>
-          <a href="music.html#square-two">Square Two</a>
-          <a href="music.html#square-up">Square Up</a>
-          <a href="music.html#kil-this-love">Kill This Love</a>
-          <a href="music.html#the-album">The Album</a>
+          <a href="music.html#albums">Albums</a>
+          <a href="music.html#features">Features</a>
+          <a href="music.html#solos">Solo Releases</a>
         </div>
       </div>
       <a href="tour.html">Tour</a>
@@ -42,49 +40,90 @@
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
+    <a name="albums"></a>
+    <h2>Albums</h2>
     <div class="grid-container" style="text-align: center">
 
-      <div class="hovcontainer">
+      <div>
         <a name="square-one"></a>
-        <img src="Image/square-one.jpg" alt="Blackpink Square One Cover (2016)">
-        <div class="hovoverlay">
-          <div class="hovtext">Square One (2016)</div>
+        <button type="button" class="collapsible"><img src="Image/square-one.jpg" alt="Blackpink Square One Cover (2016)"></button>
+        <div class="content">
+          Square One (2016)
         </div>
       </div>
 
-      <div class="hovcontainer">
+      <div>
         <a name="square-two"></a>
-        <img src="Image/square-two.jpg" alt="Blackpink Square Two Cover (2016)">
-        <div class="hovoverlay">
-          <div class="hovtext">Square Two (2016)</div>
+        <button type="button" class="collapsible"><img src="Image/square-two.jpg" alt="Blackpink Square Two Cover (2016)"></button>
+        <div class="content">
+          Square Two (2016)
         </div>
       </div>
 
-      <div class="hovcontainer">
+      <div>
         <a name="square-up"></a>
-        <img src="Image/square-up.jpg" alt="Blackpink Square Up Cover (2018)">
-        <div class="hovoverlay">
-          <div class="hovtext">Square Up (2018)</div>
+        <button type="button" class="collapsible"><img src="Image/square-up.jpg" alt="Blackpink Square Up Cover (2018)"></button>
+        <div class="content">
+          Square Up (2018)
         </div>
       </div>
 
-      <div class="hovcontainer">
+      <div>
         <a name="kill-this-love"></a>
-        <img src="Image/kill-this-love.jpg" alt="Blackpink Kill This Love Cover (2019)">
-        <div class="hovoverlay">
-          <div class="hovtext">Kill This Love (2019)</div>
+        <button type="button" class="collapsible"><img src="Image/kill-this-love.jpg" alt="Blackpink Square One Cover (2019)"></button>
+        <div class="content">
+          Kill This Love (2019)
         </div>
       </div>
 
-      <div class="hovcontainer">
+      <div>
         <a name="the-album"></a>
-        <img src="Image/the-album.jpg" alt="Blackpink The Album Cover">
-        <div class="hovoverlay">
-          <div class="hovtext"> The Album (2020)</div>
+        <button type="button" class="collapsible"><img src="Image/the-album.jpg" alt="Blackpink Square One Cover (2020)"></button>
+        <div class="content">
+          The Album (2020)
         </div>
       </div>
 
     </div>
+
+
+    <a name="features"></a>
+    <h2>Features</h2>
+    <div class="grid-container" style="text-align: center">
+
+      <div>
+        <a name="kamu"></a>
+        <button type="button" class="collapsible"><img src="Image/kamu.jpg" alt="Kiss and Make Up Cover (2018)"></button>
+        <div class="content">
+          Kiss and Make Up (2018)
+        </div>
+      </div>
+
+      <div>
+        <a name="sour-candy"></a>
+        <button type="button" class="collapsible"><img src="Image/chromatica.jpg" alt="Chromatica Cover (2018)"></button>
+        <div class="content">
+          Sour Candy (2020)
+        </div>
+      </div>
+
+    </div>
+
+
+    <a name="solos"></a>
+    <h2>Solo Releases</h2>
+    <div class="grid-container" style="text-align: center">
+
+      <div>
+        <a name="solo"></a>
+        <button type="button" class="collapsible"><img src="Image/solo.jpg" alt="Jennie Solo Cover (2018)"></button>
+        <div class="content">
+          Solo (2018)
+        </div>
+      </div>
+
+    </div>
+
 
     <script>
       function myFunction() {
@@ -98,24 +137,19 @@
     </script>
 
     <script>
-      /* When the user clicks on the button,
-      toggle between hiding and showing the dropdown content */
-      function myFunction2() {
-        document.getElementById("myDropdown2").classList.toggle("show");
-      }
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
 
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn2')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content2");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
           }
-        }
+        });
       }
     </script>
 

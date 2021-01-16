@@ -9,44 +9,50 @@
 
   <body>
 
-    <!-- The header for the webpage is the logo for the film. The alt is so the user can have a description of the image if it does not load-->
-    <header>
-      <img class="title" src="Image/Blackpink-Logo.png" alt="Girls Trip Film Logo">
-    </header>
+    <video class="full-video" autoplay loop onloadstart="this.volume=0.2" id="myVideo">
+      <source src="Video/ps-home-video.mp4" type="video/mp4">
+      <source src="Video/ps-home-video.ogg" type="video/webm">
+        Your browser does not support HTML5 video.
+    </video>
 
-    <!-- The navigation bar with the active page set as Home -->
-    <div class="navbar" id="mynavbar">
-      <a href="home.html">Home</a>
-      <div class="dropdown">
-        <button class="dropbtn"><a href="members.html">Members</a>
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="members.html#Lisa">Lisa</a>
-          <a href="members.html#Jennie">Jennie</a>
-          <a href="members.html#Jisoo">Jisoo</a>
-          <a href="members.html#Rose">Rose</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn"><a href="music.html">Discography</a></button>
-        <div class="dropdown-content">
-          <a href="music.html#square-one">Square One</a>
-          <a href="music.html#square-two">Square Two</a>
-          <a href="music.html#square-up">Square Up</a>
-          <a href="music.html#kil-this-love">Kill This Love</a>
-          <a href="music.html#the-album">The Album</a>
-        </div>
-      </div>
-      <a href="tour.html">Tour</a>
-      <a href="social.html">Social</a>
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <div class="vid-header">
+      <!-- The header for the webpage is the logo for the film. The alt is so the user can have a description of the image if it does not load-->
+      <header>
+        <img class="title" src="Image/Blackpink-Logo.png" alt="Blackpink Logo">
+      </header>
     </div>
 
-    <!-- The synopsis of the film-->
-    <div class="section">
-      <img src="Image/Blackpink-1.png" alt="Image of Blackpink">
+    <div class="vid-content">
+      <!-- The navigation bar with the active page set as Home -->
+      <div class="navbar" id="mynavbar">
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn"><a href="members.html">Members</a>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="members.html#Jennie">Jennie</a>
+            <a href="members.html#Jisoo">Jisoo</a>
+            <a href="members.html#Lisa">Lisa</a>
+            <a href="members.html#Rose">Rose</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"><a href="music.html">Discography</a></button>
+          <div class="dropdown-content">
+            <a href="music.html#albums">Albums</a>
+            <a href="music.html#features">Features</a>
+            <a href="music.html#solos">Solo Releases</a>
+          </div>
+        </div>
+        <a href="tour.html">Tour</a>
+        <a href="social.html">Social</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+
     </div>
+
+
 
     <script>
       function myFunction() {
