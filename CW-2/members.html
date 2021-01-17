@@ -40,49 +40,56 @@
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
-    <!-- An extra navagation bar to jump to each cast member on the page -->
-    <nav class="nav2">
-      <a href="#Jennie">Jennie</a>
-      <a href="#Jisoo">Jisoo</a>
-      <a href="#Lisa">Lisa</a>
-      <a href="#Rose">Rose</a>
-    </nav>
-
-
-    <a name="Jennie"></a>
-    <div class="members-grid">
-      <div class="item1"><h2>Jennie</h2></div>
-      <div class="item2"><img class="member-img" src="Image/jennie.png" alt="Image of Blackpink Jennie"></div>
-      <div class="item3">Facts</div>
-      <div class="item4">More Facts</div>
-      <div class="item5">Audio</div>
+    <div class="tab">
+      <button class="tablinks" onclick="openMember(event, 'Jennie')">Jennie</button>
+      <button class="tablinks" onclick="openMember(event, 'Jisoo')">Jisoo</button>
+      <button class="tablinks" onclick="openMember(event, 'Lisa')">Lisa</button>
+      <button class="tablinks" onclick="openMember(event, 'Rose')">Rose</button>
     </div>
 
-    <a name="Jisoo"></a>
-    <div class="members-grid">
-      <div class="item1"><h2>Jisoo</h2></div>
-      <div class="item2"><img class="member-img" src="Image/jisoo.png" alt="Image of Blackpink Jisoo"></div>
-      <div class="item3">Facts</div>
-      <div class="item4">More Facts</div>
-      <div class="item5">Audio</div>
+    <!-- Tab content -->
+    <div id="Jennie" class="tabcontent">
+      <a name="Jennie"></a>
+      <div class="members-grid">
+        <div class="item1"><h2>Jennie</h2></div>
+        <div class="item2"><img class="member-img" src="Image/jennie.png" alt="Image of Blackpink Jennie"></div>
+        <div class="item3">Facts</div>
+        <div class="item4">More Facts</div>
+        <div class="item5">Audio</div>
+      </div>
     </div>
 
-    <a name="Lisa"></a>
-    <div class="members-grid">
-      <div class="item1"><h2>Lisa</h2></div>
-      <div class="item2"><img class="member-img" src="Image/lisa.png" alt="Image of Blackpink Lisa"></div>
-      <div class="item3">Facts</div>
-      <div class="item4">More Facts</div>
-      <div class="item5">Audio</div>
+    <div id="Jisoo" class="tabcontent">
+      <a name="Jisoo"></a>
+      <div class="members-grid">
+        <div class="item1"><h2>Jisoo</h2></div>
+        <div class="item2"><img class="member-img" src="Image/jisoo.png" alt="Image of Blackpink Jisoo"></div>
+        <div class="item3">Facts</div>
+        <div class="item4">More Facts</div>
+        <div class="item5">Audio</div>
+      </div>
     </div>
 
-    <a name="Rose"></a>
-    <div class="members-grid">
-      <div class="item1"><h2>Rose</h2></div>
-      <div class="item2"><img class="member-img" src="Image/rose.png" alt="Image of Blackpink Rose"></div>
-      <div class="item3">Facts</div>
-      <div class="item4">More Facts</div>
-      <div class="item5">Audio</div>
+    <div id="Lisa" class="tabcontent">
+      <a name="Lisa"></a>
+      <div class="members-grid">
+        <div class="item1"><h2>Lisa</h2></div>
+        <div class="item2"><img class="member-img" src="Image/lisa.png" alt="Image of Blackpink Lisa"></div>
+        <div class="item3">Facts</div>
+        <div class="item4">More Facts</div>
+        <div class="item5">Audio</div>
+      </div>
+    </div>
+
+    <div id="Rose" class="tabcontent">
+      <a name="Rose"></a>
+      <div class="members-grid">
+        <div class="item1"><h2>Rose</h2></div>
+        <div class="item2"><img class="member-img" src="Image/rose.png" alt="Image of Blackpink Rose"></div>
+        <div class="item3">Facts</div>
+        <div class="item4">More Facts</div>
+        <div class="item5">Audio</div>
+      </div>
     </div>
 
 
@@ -94,6 +101,22 @@
       } else {
         x.className = "navbar";
         }
+      }
+    </script>
+
+    <script>
+      function openMember(evt, member) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(member).style.display = "block";
+        evt.currentTarget.className += " active";
       }
     </script>
 
