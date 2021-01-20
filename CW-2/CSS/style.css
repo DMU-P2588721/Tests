@@ -5,6 +5,7 @@ body {
   margin: 0;
   background-color: black;
   color: white;
+  overflow: hidden;
 }
 
 /*Custom Scrollbar*/
@@ -34,6 +35,7 @@ body {
 
 /*curved corners for images*/
 img {
+  text-align: center;
   width: 100%;
   border-radius: 5px;
 }
@@ -102,7 +104,7 @@ h1, h2 {
   position: absolute;
   background-color: black;
   min-width: 160px;
-  z-index: 1;
+  z-index: 10;
 }
 
 .dropdown-content a {
@@ -194,16 +196,22 @@ h1, h2 {
 
 /*Layout for Members Page*/
 
-/* Style the tab */
+/* Style the members menu */
+.tab-img{
+  background-image: url(../Image/blackpink-banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
 .tab {
   overflow: hidden;
-  background-color: black;
   display: flex;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: inherit;
+  background-color: rgba(0 , 0 , 0 , 0.5);
   flex-grow: 1;
   border: none;
   outline: none;
@@ -228,7 +236,7 @@ h1, h2 {
 
 }
 
-/* Style the tab content */
+/* Style the Member Tabs content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
@@ -262,6 +270,9 @@ h1, h2 {
 }
 
 .member-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 20vw;
 }
 
@@ -269,13 +280,19 @@ h1, h2 {
 .grid-container {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  grid-gap: 10px;
+  grid-gap: 15px;
   padding: 10px;
 }
 
 .grid-container > div {
   text-align: center;
   font-size: 20px;
+}
+
+.grid-container > div > button > img , .tabcontent > div > div > img{
+  text-align: center;
+  border: 2px solid black;
+  box-shadow: 0 0 5px #F3A7BA;
 }
 
 /*Collapsable Buttons Music Page*/
@@ -309,7 +326,7 @@ h1, h2 {
 }
 
 
-/* Tiles */
+/* Social Media Page*/
 
 .tiles {
   display: grid;
@@ -330,101 +347,108 @@ h1, h2 {
   }
 }
 
-	.tiles article {
-		transition: transform 0.5s ease, opacity 0.5s ease;
-    flex-grow: 1;
-		position: relative;
-    text-align: center;
-		margin: 20px;
-	}
+.tiles article {
+	transition: transform 0.5s ease, opacity 0.5s ease;
+  flex-grow: 1;
+	position: relative;
+  text-align: center;
+	margin: 20px;
+}
 
-		.tiles article > .image {
-			transition: transform 0.5s ease;
-			position: relative;
-			display: block;
-			width: 100%;
-			overflow: hidden;
-		}
+.tiles article > .image {
+	transition: transform 0.5s ease;
+	position: relative;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
 
-		.tiles article > .image:before {
-			transition: background-color 0.5s ease, opacity 0.5s ease;
-			content: '';
-			display: block;
-			position: absolute;
-			width: 100%;
-			height: 100%;
-      background-color: black;
-			opacity: .5;
-			z-index: 1;
-		}
+.tiles article > .image:before {
+	transition: background-color 0.5s ease, opacity 0.5s ease;
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  background-color: black;
+	opacity: .5;
+	z-index: 1;
+}
 
-		.tiles article > a {
-			align-items: center;
-			transition: background-color 0.5s ease, transform 0.5s ease;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #F3A7BA;
-      font-size: 17px;
-			text-decoration: none;
-			z-index: 3;
-		}
+.tiles article > a {
+	align-items: center;
+	transition: background-color 0.5s ease, transform 0.5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #F3A7BA;
+  font-size: 17px;
+	text-decoration: none;
+	z-index: 3;
+}
 
-		body:not(.is-touch) .tiles article:hover > .image {
-			transform: scale(1.1);
-		}
+body:not(.is-touch) .tiles article:hover > .image {
+	transform: scale(1.1);
+}
 
-		body:not(.is-touch) .tiles article:hover > .image:before {
-			background-color: none !important;
-			opacity: 0.2;
-		}
-
+body:not(.is-touch) .tiles article:hover > .image:before {
+	background-color: none !important;
+	opacity: 0.2;
+}
 
 
 /*Formats the footer*/
 footer {
-  display: flex;
-  flex-grow: 1
-  bottom: 0;
-  color: #F3A7BA;
+  background-color: black;
+  padding: 20px;
+  font-size: 15px;
+  color: #737373;
   text-align: center;
-  justify-content: space-around;
-  font-size: 13px;
+  overflow: hidden;
 }
 
 /*Social Media Links*/
-.fa {
-  padding: 10px;
-  font-size: 15px;
-  width: 20px;
-  text-align: center;
-  vertical-align: middle;
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.social-icons a {
+  display: inline-block;
+  background-color: #33353d;
+  color: #F3A7BA;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   text-decoration: none;
-  margin: 5px;
-  border-radius: 50%;
+  text-align: center;
+  margin: 2px;
+  border-radius: 100%;
+  transition: all 0.2s linear;
 }
 
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-instagram {
-  background: #F3A7BA;
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover {
   color: white;
+  background-color: #F3A7BA;
 }
 
-.fa-youtube {
-  background: #F3A7BA;
-  color: white;
-}
-
-.fa-facebook {
-  background: #F3A7BA;
-  color: white;
-}
-
-.fa-twitter {
-  background: #F3A7BA;
+.fa{
+  background: #F3A7BA
   color: white;
 }

@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Members | Blackpink</title>
   </head>
 
-  <body>
+  <body  onload="document.getElementById('defaultOpen').click();">
 
     <header>
       <img class="title" src="Image/Blackpink-Logo.png">
@@ -38,14 +39,29 @@
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
-    <div class="tab">
-      <button class="tablinks" onclick="openMember(event, 'Jennie')">Jennie</button>
-      <button class="tablinks" onclick="openMember(event, 'Jisoo')">Jisoo</button>
-      <button class="tablinks" onclick="openMember(event, 'Lisa')">Lisa</button>
-      <button class="tablinks" onclick="openMember(event, 'Rose')">Rose</button>
+    <div class="tab-img">
+      <div class="tab">
+        <button class="tablinks" onclick="openMember(event, 'Band')" id="defaultOpen">The Band</button>
+      </div>
+
+      <div class="tab">
+        <button class="tablinks" onclick="openMember(event, 'Jennie')">Jennie</button>
+        <button class="tablinks" onclick="openMember(event, 'Jisoo')">Jisoo</button>
+        <button class="tablinks" onclick="openMember(event, 'Lisa')">Lisa</button>
+        <button class="tablinks" onclick="openMember(event, 'Rose')">Rose</button>
+      </div>
     </div>
 
     <!-- Tab content -->
+
+    <div id="Band" class="tabcontent">
+      <a name="Band"></a>
+      <div class="section">
+        <h2>The Band</h2></div>
+        <img src="Image/blackpink-banner.png" alt="Image of Blackpink">
+      </div>
+    </div>
+
     <div id="Jennie" class="tabcontent">
       <a name="Jennie"></a>
       <div class="members-grid">
@@ -56,6 +72,7 @@
         <div class="item5">Audio</div>
       </div>
     </div>
+
 
     <div id="Jisoo" class="tabcontent">
       <a name="Jisoo"></a>
@@ -91,43 +108,21 @@
     </div>
 
 
-    <script>
-      function myFunction() {
-      var x = document.getElementById("mynavbar");
-      if (x.className === "navbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar";
-        }
-      }
-    </script>
-
-    <script>
-      function openMember(evt, member) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(member).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-    </script>
+    <script src="JS/navbar.js"></script>
+    <script src="JS/member-tab.js"></script>
 
     <!-- Footer for the website-->
     <footer>
-      <p>TECH1015 Coursework 2</p>
-      <p>Jarick Boyce - P2588721</p>
-      <p>Information from Wikipedia</p>
+      <hr>
+      <p>Copyright &copy; 2021 | All Rights Reserved by YG Entertainment.</p>
+
       <div>
-        <a href="https://www.instagram.com/blackpinkofficial/" target="_blank" class="fa fa-instagram"></a>
-        <a href="https://twitter.com/ygofficialblink?lang=en" target="_blank" class="fa fa-twitter"></a>
-        <a href="https://www.facebook.com/BLACKPINKOFFICIAL/" target="_blank" class="fa fa-facebook"></a>
-        <a href="https://www.youtube.com/channel/UCOmHUn--16B90oW2L6FRR3A" target="_blank" class="fa fa-youtube"></a>
+        <ul class="social-icons">
+          <a href="https://www.instagram.com/blackpinkofficial/" target="_blank" class="fa fa-instagram"></a>
+          <a href="https://twitter.com/ygofficialblink?lang=en" target="_blank" class="fa fa-twitter"></a>
+          <a href="https://www.facebook.com/BLACKPINKOFFICIAL/" target="_blank" class="fa fa-facebook"></a>
+          <a href="https://www.youtube.com/channel/UCOmHUn--16B90oW2L6FRR3A" target="_blank" class="fa fa-youtube"></a>
+        </ul>
       </div>
     </footer>
 
