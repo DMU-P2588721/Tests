@@ -17,16 +17,8 @@
     <!-- The navigation bar with the active page as Music-->
     <div class="navbar" id="mynavbar">
       <a href="home.html">Home</a>
-      <div class="dropdown">
-        <button class="dropbtn"><a href="members.html">Members</a></button>
-        <div class="dropdown-content">
-          <a href="members.html#Jennie">Jennie</a>
-          <a href="members.html#Jisoo">Jisoo</a>
-          <a href="members.html#Lisa">Lisa</a>
-          <a href="members.html#Rose">Rose</a>
-        </div>
-      </div>
-      <div class="dropdown">
+      <a href="members.html">Members</a>
+        <div class="dropdown">
         <button class="dropbtn"><a href="music.html">Discography</a></button>
         <div class="dropdown-content">
           <a href="music.html#albums">Albums</a>
@@ -39,37 +31,45 @@
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
+
+
     <a name="albums"></a>
     <h2>Albums</h2>
     <div class="grid-container album" style="text-align: center">
 
       <div>
         <a name="square-one"></a>
-        <button type="button" class="collapsible"><img src="Image/square-one.jpg" alt="Blackpink Square One Cover (2016)"></button>
+        <button type="album-button" class="collapsible"><img src="Image/square-one.jpg" alt="Blackpink Square One Cover (2016)"></button>
         <div class="content">
-          Square One (2016)
+          <h3>Square One (2016)</h3>
+          <p>Square One (stylized in all caps) is the first single album by South Korean girl group Blackpink. It was released digitally on August 8, 2016 by YG Entertainment and distributed by KT Music.
+             The lyrics were written by Teddy Park, Bekuh Boom and iKON's B.I while the music was composed by Teddy Park, Future Bounce and Bekuh Boom.</p>
         </div>
       </div>
 
       <div>
         <a name="square-two"></a>
-        <button type="button" class="collapsible"><img src="Image/square-two.jpg" alt="Blackpink Square Two Cover (2016)"></button>
+        <button type="album-button" class="collapsible"><img src="Image/square-two.jpg" alt="Blackpink Square Two Cover (2016)"></button>
         <div class="content">
-          Square Two (2016)
+          <h3>Square Two (2016)</h3>
+          <p>Square Two (stylized in all caps) is the second single album by South Korean girl group Blackpink. It was released as a digital single on November 1, 2016 by YG Entertainment and distributed by KT Music.
+            The single has a double A-side, "Playing with Fire" and "Stay" as well as an acoustic version of "Whistle".
+            The lyrics were written by Teddy Park and the music was composed by Teddy Park, R.Tee and Seo Won-jin.</p>
         </div>
       </div>
 
       <div>
         <a name="square-up"></a>
-        <button type="button" class="collapsible"><img src="Image/square-up.jpg" alt="Blackpink Square Up Cover (2018)"></button>
+        <button type="album-button" class="collapsible"><img src="Image/square-up.jpg" alt="Blackpink Square Up Cover (2018)"></button>
         <div class="content">
-          Square Up (2018)
+          <h3>Square Up (2018)</h3>
+          <p>Square Up (stylized in all caps) is the first Korean extended play (second overall) by South Korean girl group Blackpink. It was released on June 15, 2018 by YG Entertainment.[3] It is available in two versions and contains four tracks, with "Ddu-Du Ddu-Du" released as the lead single. Upon its release, Square Up debuted at the top spot of the Gaon Albums Chart and went on to sell almost 179,000 copies on its first fifteen days of release in South Korea.[4] The EP also debuted at number 40 on the US Billboard 200, becoming Blackpink's third highest selling album in a Western market as well as the third highest-charting to date by an all-female K-pop group.</p>
         </div>
       </div>
 
       <div>
         <a name="kill-this-love"></a>
-        <button type="button" class="collapsible"><img src="Image/kill-this-love.jpg" alt="Blackpink Square One Cover (2019)"></button>
+        <button type="album-button" class="collapsible"><img src="Image/kill-this-love.jpg" alt="Blackpink Square One Cover (2019)"></button>
         <div class="content">
           Kill This Love (2019)
         </div>
@@ -77,7 +77,7 @@
 
       <div>
         <a name="the-album"></a>
-        <button type="button" class="collapsible"><img src="Image/the-album.jpg" alt="Blackpink Square One Cover (2020)"></button>
+        <button type="album-button" class="collapsible"><img src="Image/the-album.jpg" alt="Blackpink Square One Cover (2020)"></button>
         <div class="content">
           The Album (2020)
         </div>
@@ -92,7 +92,7 @@
 
       <div>
         <a name="kamu"></a>
-        <button type="button" class="collapsible"><img src="Image/kamu.jpg" alt="Kiss and Make Up Cover (2018)"></button>
+        <button type="album-button" class="collapsible"><img src="Image/kamu.jpg" alt="Kiss and Make Up Cover (2018)"></button>
         <div class="content">
           Kiss and Make Up (2018)
         </div>
@@ -100,7 +100,7 @@
 
       <div>
         <a name="sour-candy"></a>
-        <button type="button" class="collapsible"><img src="Image/chromatica.jpg" alt="Chromatica Cover (2018)"></button>
+        <button type="album-button" class="collapsible"><img src="Image/chromatica.jpg" alt="Chromatica Cover (2018)"></button>
         <div class="content">
           Sour Candy (2020)
         </div>
@@ -115,9 +115,22 @@
 
       <div>
         <a name="solo"></a>
-        <button type="button" class="collapsible"><img src="Image/solo.jpg" alt="Jennie Solo Cover (2018)"></button>
+        <button type="album-button" class="collapsible"><img src="Image/solo.jpg" alt="Jennie Solo Cover (2018)"></button>
         <div class="content">
-          Solo (2018)
+          <h3>Solo (2018)</h3>
+        </div>
+      </div>
+    </div>
+
+    <a name="live"></a>
+    <h2>Live Concert Albums</h2>
+    <div class="grid-container" style="text-align: center">
+
+      <div>
+        <a name="osaka"></a>
+        <button type="album-button" class="collapsible"><img src="Image/osaka.jpg" alt="Jennie Solo Cover (2018)"></button>
+        <div class="content">
+          <h3>Blackpink Arena Tour 2018 "Special Final in Kyocera Dome Osaka" </h3>
         </div>
       </div>
 

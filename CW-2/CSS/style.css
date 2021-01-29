@@ -5,7 +5,6 @@ body {
   margin: 0;
   background-color: black;
   color: white;
-  overflow: hidden;
 }
 
 /*Custom Scrollbar*/
@@ -54,7 +53,7 @@ header {
   text-align: center;
 }
 
-h1, h2 {
+h1, h2 , h3 {
   text-align: center;
   color: #F3A7BA;
   font-weight: bold;
@@ -91,12 +90,11 @@ h1, h2 {
 }
 
 .dropdown .dropbtn {
-  font-size: 14px 16px;
+  font-size: 15px;
   border: none;
   color: #F3A7BA;
   background-color: inherit;
   font-family: inherit;
-  margin: 0px;
 }
 
 .dropdown-content {
@@ -194,6 +192,8 @@ h1, h2 {
   justify-content: center;
 }
 
+
+
 /*Layout for Members Page*/
 
 /* Style the members menu */
@@ -228,12 +228,13 @@ h1, h2 {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-
+  color: white;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-
+  font-size: 17px;
+  color: white;
 }
 
 /* Style the Member Tabs content */
@@ -280,8 +281,9 @@ h1, h2 {
 .grid-container {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  grid-gap: 15px;
+  grid-gap: 10px;
   padding: 10px;
+  overflow-x: hidden;
 }
 
 .grid-container > div {
@@ -292,22 +294,17 @@ h1, h2 {
 .grid-container > div > button > img , .tabcontent > div > div > img{
   text-align: center;
   border: 2px solid black;
-  box-shadow: 0 0 5px #F3A7BA;
+  box-shadow: 0 0 2px #F3A7BA;
 }
 
 /*Collapsable Buttons Music Page*/
-.button{
-  background-color: #4CAF50;
+.album-button{
   border: none;
   color: white;
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
 }
+
 .collapsible {
   background-color: black;
   cursor: pointer;
@@ -315,13 +312,9 @@ h1, h2 {
   outline: none;
 }
 
-.active, .collapsible:hover {
-
-}
-
 .content {
   display: none;
-  overflow: hidden;
+  text-align: center;
   background-color: black;
 }
 
