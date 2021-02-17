@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../Image/icon.png">
+    <title>Square One | BLACKPINK</title>
+  </head>
+
+  <body onload="document.getElementById('defaultOpen').click();">
+
+    <header>
+      <img class="title" src="../Image/Blackpink-Logo.png">
+    </header>
+
+    <!-- The navigation bar with the active page as Music-->
+    <div class="navbar" id="mynavbar">
+      <a href="../home.html">Home</a>
+      <a href="../members.html">Members</a>
+        <div class="dropdown">
+        <button class="dropbtn"><a href="../music.html">Discography</a></button>
+        <div class="dropdown-content">
+          <a href="../music.html#albums">Albums and EPs</a>
+          <a href="../music.html#features">Features</a>
+          <a href="../music.html#solos">Solo Releases</a>
+          <a href=../"music.html#live">Live Concert Albums</a>
+        </div>
+      </div>
+      <a href="../tour.html">Tour</a>
+      <a href="../social.html">Social</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- An extra navagation bar to jump to each album section on the page -->
+    <nav>
+      <h2><a href="../music.html">Go Back</a></h2>
+    </nav>
+
+    <div class="info-grid">
+      <div class="item1"><h1>Square One</h1></div>
+
+      <div class="item2"><img class="info-img" src="../Image/square-one.jpg" alt="Blackpink Square One Cover (2016)"></div>
+
+      <div class="item3">
+        <div class="section">
+          Square One (stylized in all caps) is the first single album by South Korean girl group Blackpink. It was released digitally on August 8, 2016 by YG Entertainment and distributed by KT Music.
+          The lyrics were written by Teddy Park, Bekuh Boom and iKON's B.I while the music was composed by Teddy Park, Future Bounce and Bekuh Boom.
+          <hr>
+
+          <h3>Track List</h3>
+          <ol>
+            <li>WHISTLE</li>
+            <li>BOOMBAYAH</li>
+          </ol>
+          <iframe src="https://open.spotify.com/embed/album/0AcFaK32ui9rF2ySEdXrv4" width="250" height="330" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <hr>
+          <h3>Promotion</h3>
+          To promote Square One, Blackpink held its first live performances of "Whistle" and "Boombayah" at the SBS Inkigayo on August 14, 2016.
+          A week later, on August 21, the group won its first award during a musical program for "Whistle" at Inkigayo.
+        </div>
+      </div>
+
+      <div class="item4">
+        <div class="section">
+          <h3>General Information</h3>
+          <p><strong>Artist: </strong>BLACKPINK</p>
+          <p><strong>Released: </strong>8th August 2016</p>
+          <p><strong>Genre: </strong>K-Pop , Hip-Hop , EDM</p>
+          <p><strong>Language: </strong>Korean , English</p>
+          <p><strong>Length: </strong>7:31</p>
+          <p><strong>Label: </strong>YG , KT</p>
+          <p><strong>Writer(s): </strong>Teddy, Bekuh Boom</p>
+          <hr>
+          <h3>Release Chronology</h3>
+          <p> N/A |<a href="square-two.html"> Square Two (2016) </a></p>
+        </div>
+      </div>
+      <div class="item5">
+        <h2>Videos</h2>
+        <div class="section-tab">
+          <div class="tab">
+            <button class="tablinks" onclick="openMember(event, 'music-vid')" id="defaultOpen">Music Videos</button>
+            <button class="tablinks" onclick="openMember(event, 'dance')">Dance Practice</button>
+            <button class="tablinks" onclick="openMember(event, 'bts')">Behind The Scenes</button>
+          </div>
+
+          <!-- Tab content -->
+
+          <div id="music-vid" class="tabcontent">
+            <div class="vid-section col-2">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/dISNgvVpWlo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/bwmSjveL3Lc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+
+          <div id="dance" class="tabcontent">
+            <div class="vid-section col-2">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/1kYrp_Bs8DU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/1kYrp_Bs8DU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div id="bts" class="tabcontent">
+            <div class="vid-section col-2">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/cxbZuoF3RuQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/uy2Yc5tt5ns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="../JS/navbar.js"></script>
+    <script src="../JS/member-tab.js"></script>
+
+    <!-- Footer for the website-->
+    <footer>
+      <hr>
+      <p>Copyright &copy; 2021 | All Rights Reserved by YG Entertainment.</p>
+
+      <div>
+        <ul class="social-icons">
+          <a href="https://www.instagram.com/blackpinkofficial/" target="_blank" class="fa fa-instagram"></a>
+          <a href="https://twitter.com/ygofficialblink?lang=en" target="_blank" class="fa fa-twitter"></a>
+          <a href="https://www.facebook.com/BLACKPINKOFFICIAL/" target="_blank" class="fa fa-facebook"></a>
+          <a href="https://www.youtube.com/channel/UCOmHUn--16B90oW2L6FRR3A" target="_blank" class="fa fa-youtube"></a>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+</html>
