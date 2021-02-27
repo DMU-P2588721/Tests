@@ -1,7 +1,7 @@
 /*Variable with the starting slide numbers*/
-var slideIndex = [1,1,1,1,1,1,1,1];
+var slideIndex = [1,1,1,1,1,1,1,1,1,1];
 /* Class the members of each slideshow group with different CSS classes */
-var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8"]
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9", "mySlides10"]
 
 showSlides(1, 0);
 showSlides(1, 1);
@@ -11,6 +11,8 @@ showSlides(1, 4);
 showSlides(1, 5);
 showSlides(1, 6);
 showSlides(1, 7);
+showSlides(1, 8);
+showSlides(1, 9);
 
 
 function plusSlides(change, gal_no) {   /*Input from html, the change in slide and the gallery that is being changed*/
