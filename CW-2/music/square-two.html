@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../Image/icon.png">
+    <title>Square Two | BLACKPINK</title>
+  </head>
+
+  <body onload="document.getElementById('defaultOpen').click();">
+
+    <header>
+      <img class="title" src="../Image/Blackpink-Logo.png">
+    </header>
+
+    <!-- The navigation bar with the active page as Music-->
+    <div class="navbar" id="mynavbar">
+      <a href="../home.html">Home</a>
+      <a href="../members.html">Members</a>
+      <a href="../music.html">Discography</a>
+      <a href="../tour.html">Concerts</a>
+      <a href="../social.html">Social</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- An extra navagation bar to jump to each album section on the page -->
+    <nav>
+      <h2><a href="../music.html">Go Back</a></h2>
+    </nav>
+
+    <div class="info-grid">
+      <div class="item1"><h1>Square Two</h1></div>
+
+      <div class="item2"><img class="info-img" src="../Image/square-two.jpg" alt="Blackpink Square Two Cover (2016)"></div>
+
+      <div class="item3">
+        <div class="section">
+          Square Two is the second digital single album by South Korean girl group BLACKPINK. It was released on November 1, 2016 by YG Entertainment and distributed by KT Music. The single has a double A-side, "Playing with Fire" and "Stay", and bonus track "Whistle (Acoustic Ver.)".
+          The lyrics were written by Teddy and the music was composed by Teddy, R.Tee and Seo Won Jin.
+          <hr>
+
+          <h3>Track List</h3>
+          <div class="grid-container col-2">
+            <ol>
+              <li>"Playing With Fire (불장난)</li>
+              <li>Stay</li>
+              <li>Whistle (휘파람)" (Acoustic ver.)</li>
+            </ol>
+            <iframe src="https://open.spotify.com/embed/album/2s27rRgZswwbRJUQXSGTLf" width="250" height="330" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+          <hr>
+          <h3>Background and Release</h3>
+          On October 19, 2016, via YG Who's Next? Teaser it was revealed that BLACKPINK would be the next YG artist to make a comeback. On October 24, teaser images of members Lisa and Jennie were revealed, along with the name of one of the title tracks, "Playing With Fire", followed by teaser images of Rosé and Jisoo the next day. Teaser images of all four members were released on October 27 for the second title track "Stay". On October 30, YG released the behind-the-scenes video of "Stay", and on October 31, the behind-the-scenes video for "Playing With Fire". They performed their comeback stage for both singles on November 6 on SBS Inkigayo and Mnet M!'Countdown on November 10, 2016.
+          <h3>Music Videos</h3>
+          The music videos for "Playing With Fire" and "Stay" were directed by Han Sa Min, who previously directed "Gotta Be You" by 2NE1 and "Sober" by Big Bang. They were released on BLACKPINK's official YouTube channel on October 31, 2016 (November 1, 2016 0AM KST). BLACKPINK also released the dance practice video for "Playing With Fire" on their official YouTube channel on November 4, 2016. It was choreographed by Kyle Hanagami, who had worked with them for "Boombayah" from their previous single Square One.
+        </div>
+      </div>
+
+      <div class="item4">
+        <div class="section">
+          <h3>General Information</h3>
+          <p><strong>Artist: </strong>BLACKPINK</p>
+          <p><strong>Released: </strong>1st November 2016</p>
+          <p><strong>Genre: </strong>Tropical house, folk-pop, EDM</p>
+          <p><strong>Language: </strong>Korean , English</p>
+          <p><strong>Length: </strong>10:39</p>
+          <p><strong>Label: </strong>YG , KT</p>
+          <p><strong>Writer(s): </strong>Teddy</p>
+          <hr>
+          <h3>Release Chronology</h3>
+          <p> <a href="square-one.html"> Square One (2016) </a> |<a href="square-up.html"> Square Up (2018) </a></p>
+        </div>
+      </div>
+      <div class="item5">
+        <h2>Videos</h2>
+        <div class="section-tab">
+          <div class="tab">
+            <button class="tablinks" onclick="openMember(event, 'music-vid')" id="defaultOpen">Music Videos</button>
+            <button class="tablinks" onclick="openMember(event, 'dance')">Dance Practice</button>
+            <button class="tablinks" onclick="openMember(event, 'bts')">Behind The Scenes</button>
+          </div>
+
+          <!-- Tab content -->
+
+          <div id="music-vid" class="tabcontent">
+            <div class="vid-section col-2">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/9pdj4iJD08s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/FzVR_fymZw4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+
+          <div id="dance" class="tabcontent">
+            <div class="vid-section col-1">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/NvWfJTbrTBY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div id="bts" class="tabcontent">
+            <div class="vid-section col-2">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/-4f_1HYnTcM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tSuKh0obBKE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="../JS/navbar.js"></script>
+    <script src="../JS/member-tab.js"></script>
+
+    <!-- Footer for the website-->
+    <footer>
+      <hr>
+      <p>Copyright &copy; 2021 | All Rights Reserved by YG Entertainment.</p>
+
+      <div>
+        <ul class="social-icons">
+          <a href="https://www.instagram.com/blackpinkofficial/" target="_blank" class="fa fa-instagram"></a>
+          <a href="https://twitter.com/ygofficialblink?lang=en" target="_blank" class="fa fa-twitter"></a>
+          <a href="https://www.facebook.com/BLACKPINKOFFICIAL/" target="_blank" class="fa fa-facebook"></a>
+          <a href="https://www.youtube.com/channel/UCOmHUn--16B90oW2L6FRR3A" target="_blank" class="fa fa-youtube"></a>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+</html>
