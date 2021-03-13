@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../Image/icon.png">
+    <title>THE SHOW: Videos | BLACKPINK</title>
+  </head>
+
+  <body>
+
+    <header>
+      <img class="title" src="../Image/Blackpink-Logo.png">
+    </header>
+
+    <!-- The navigation bar with the active page as Music-->
+    <div class="navbar" id="mynavbar">
+      <a href="../home.html">Home</a>
+      <a href="../members.html">Members</a>
+      <a href="../music.html">Discography</a>
+      <a href="../tour.html">Concerts</a>
+      <a href="../social.html">Social</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div class="tour-item">
+      <div class="tour-thumb tour-header">
+        <img src="../Image/the-show-banner.png" alt="The Show">
+      </div>
+      <div class="tour-item-inner">
+          <div class="tour-details-wrapper">
+              <div class="tour-sub-nav">
+                  <div class="tour-title">
+                    <h2>The Show</h2>
+                  </div>
+                  <ul>
+                    <li><a href=../tour/the-show-info.html>Info</a></li>
+                    <li><a href=../tour/the-show-videos.html>Videos</a></li>
+                    <li><a href=../tour/the-show-images.html>Images</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="grid-container col-2a">
+      <section class="vid-slides">
+        <video id="slider" controls loop>
+          <source src="../Video/the-show-trailer.mp4" type="video/mp4">
+        </video>
+      </section>
+
+      <ul class="slides-nav grid-container col-2b">
+        <h3>As If It's Your Last
+          <li onclick="videoURL('../Video/the-show/aiiyl.mp4')"><img src="../Image/the-show/aiiyl.jpg"></li>
+        </h3>
+        <h3>Love to Hate Me + You Never Know
+          <li onclick="videoURL('../Video/the-show/lthm-ynk.mp4')"><img src="../Image/the-show/lthm-ynk.jpg"></li>
+        </h3>
+        <h3>Pretty Savage
+          <li onclick="videoURL('../Video/the-show/pretty-savage.mp4')"><img src="../Image/the-show/pretty-savage.jpg"></li>
+        </h3>
+        <h3>Gone
+          <li onclick="videoURL('../Video/the-show/gone.mp4')"><img src="../Image/the-show/gone.jpg"></li>
+        </h3>
+        <h3>Crazy Over You
+          <li onclick="videoURL('../Video/the-show/crazy-over-you.mp4')"><img src="../Image/the-show/crazy-over-you.jpg"></li>
+        </h3>
+        <h3>Sour Candy
+        <li onclick="videoURL('../Video/the-show/sour-candy.mp4')"><img src="../Image/the-show/sour-candy.jpg"></li>
+        </h3>
+      </ul>
+    </div>
+
+
+    <script type="text/javascript">
+      function videoURL(vidlink){
+        document.getElementById("slider").src = vidlink;
+      }
+    </script>
+
+    <script src="../JS/navbar.js"></script>
+
+    <!-- Footer for the website-->
+    <footer>
+      <hr>
+      <p>Copyright &copy; 2021 | All Rights Reserved by YG Entertainment.</p>
+
+      <div>
+        <ul class="social-icons">
+          <a href="https://www.instagram.com/blackpinkofficial/" target="_blank" class="fa fa-instagram"></a>
+          <a href="https://twitter.com/ygofficialblink?lang=en" target="_blank" class="fa fa-twitter"></a>
+          <a href="https://www.facebook.com/BLACKPINKOFFICIAL/" target="_blank" class="fa fa-facebook"></a>
+          <a href="https://www.youtube.com/channel/UCOmHUn--16B90oW2L6FRR3A" target="_blank" class="fa fa-youtube"></a>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+</html>

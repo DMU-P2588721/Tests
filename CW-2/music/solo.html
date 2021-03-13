@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../Image/icon.png">
+    <title>Solo | BLACKPINK</title>
+  </head>
+
+  <body onload="document.getElementById('defaultOpen').click();">
+
+    <header>
+      <img class="title" src="../Image/Blackpink-Logo.png">
+    </header>
+
+    <!-- The navigation bar with the active page as Music-->
+    <div class="navbar" id="mynavbar">
+      <a href="../home.html">Home</a>
+      <a href="../members.html">Members</a>
+      <a href="../music.html">Discography</a>
+      <a href="../tour.html">Concerts</a>
+      <a href="../social.html">Social</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- An extra navagation bar to jump to each album section on the page -->
+    <nav>
+      <h2><a href="../music.html">Go Back</a></h2>
+    </nav>
+
+    <div class="info-grid">
+      <div class="item1"><h1>Solo</h1></div>
+
+      <div class="item2"><img class="info-img" src="../Image/solo.jpg" alt="Jennie Solo Cover (2018)"></div>
+
+      <div class="item3">
+        <div class="section">
+          <p>“Solo" is the debut digital single released by Jennie. The song is an anthemic dance track rife with EDM synths and beat drops, boisterous, hip-hop-slanting percussion, and squealing whistle effects. The single and its music video were released on November 12, 2018.</p>
+          <hr>
+
+          <h3>Track List</h3>
+          <div class="grid-container col-2">
+            <div class="section">
+              <ol>
+                <li>Solo</li>
+              </ol>
+            </div>
+
+            <iframe src="https://open.spotify.com/embed/album/7qAJpYeABXN9ZV5wOOX59k" width="250" height="330" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+
+          <hr>
+          <h3>Background and Release</h3>
+          <p>In mid-October 2018, an announcement of Jennie's official solo debut was made. In the midst of preparation for her debut, it was decided that "Solo" would first be revealed at Black Pink's In Your Area tour in Seoul ahead of release on November 12. Upon release, within 24 hours, the music video surpassed 14.6 million views and 1.7 million likes on YouTube. “Solo” became the most viewed music video by a female k-pop solo artist in 24 hours, surpassing IU's “Palette”. The release saw her topping iTunes charts in 40 different countries, including the iTunes Worldwide Songs Chart, also making her the first K-pop female solo artist to do so. In South Korea, “Solo” claimed the number one spot on the Digital and Streaming charts on Gaon for two consecutive weeks. Jennie received her first-ever music show win on SBS's Inkigayo on November 25.</p>
+          <p>In South Korea, the song debuted and peaked at number 1 on the Gaon Digital Chart. It has also peaked at the number one spot on the Digital and Streaming Gaon charts for two consecutive weeks. Moreover, the song attained international success, becoming her first chart-topper on Billboard's World Digital Songs chart. "Solo" debuted in the charts of several countries, including Canada, Japan, Malaysia, New Zealand, Scotland, Singapore and the United Kingdom. The song has been certified platinum by Gaon, for selling 2,500,000 certified downloads and having over 100,000,000 streams by June 2019, and March 2020, respectively.</p>
+
+        </div>
+      </div>
+
+      <div class="item4">
+        <div class="section">
+          <h3>General Information</h3>
+          <p><strong>Artist: </strong>Jennie</p>
+          <p><strong>Released: </strong>12th November 2018 (digital)<br>15th November 2018 (physical)</p>
+          <p><strong>Genre: </strong>Dance, Rap, Hip Hop</p>
+          <p><strong>Length: </strong>2:49 <i>(digital)</i><br>5:38 <i>(physical)</i></p>
+          <p><strong>Label: </strong>YG Entertainment</p>
+          <p><strong>Producer(s): </strong>Teddy Park, 24</p>
+        </div>
+      </div>
+
+      <div class="item5">
+        <h2>Videos</h2>
+        <div class="section-tab">
+          <div class="tab">
+            <button class="tablinks" onclick="openMember(event, 'music-vid')" id="defaultOpen">Music Videos</button>
+            <button class="tablinks" onclick="openMember(event, 'dance')">Dance Practice</button>
+            <button class="tablinks" onclick="openMember(event, 'bts')">Behind The Scenes</button>
+          </div>
+
+          <!-- Tab content -->
+
+          <div id="music-vid" class="tabcontent">
+            <div class="vid-section col-1">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/b73BI9eUkjM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div id="dance" class="tabcontent">
+            <div class="vid-section col-1">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/vdDuCvCrcKg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div id="bts" class="tabcontent">
+            <div class="vid-section col-1">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/QCyPQVgSu0M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="../JS/navbar.js"></script>
+    <script src="../JS/member-tab.js"></script>
+
+    <!-- Footer for the website-->
+    <footer>
+      <hr>
+      <p>Copyright &copy; 2021 | All Rights Reserved by YG Entertainment.</p>
+
+      <div>
+        <ul class="social-icons">
+          <a href="https://www.instagram.com/blackpinkofficial/" target="_blank" class="fa fa-instagram"></a>
+          <a href="https://twitter.com/ygofficialblink?lang=en" target="_blank" class="fa fa-twitter"></a>
+          <a href="https://www.facebook.com/BLACKPINKOFFICIAL/" target="_blank" class="fa fa-facebook"></a>
+          <a href="https://www.youtube.com/channel/UCOmHUn--16B90oW2L6FRR3A" target="_blank" class="fa fa-youtube"></a>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+</html>
