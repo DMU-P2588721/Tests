@@ -512,11 +512,8 @@ overflow:hidden;
 
 /*Tour Video Page*/
 .tour-header{
-  object-fit: cover;
-  object-position: -20% -20%;
-
-  width: 94vw;
-  height: 20vh;
+  width: 80%;
+  margin: auto;
 }
 
 .vid-slides{
@@ -553,6 +550,73 @@ overflow:hidden;
   opacity: 1;
   transition: 0.5s;
 }
+
+/*Tour Image Page*/
+.responsive-gallery{
+  padding: 2.5%;
+  line-height: 0;
+  column-count: 4;
+  column-gap: 0.5%;
+}
+
+@media screen and (max-width:600px) {
+  .responsive-gallery{
+    column-count: 2;
+  }
+}
+
+
+.modal {
+  z-index:1;
+  display:none;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  overflow:auto;
+  background-color:rgba(0,0,0,0.8)
+}
+
+.modal-content{
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.modal-hover-opacity {
+  opacity:1;
+}
+
+.modal-hover-opacity:hover {
+  opacity:0.60;
+}
+
+.close {
+  text-decoration:none;
+  float:right;
+  font-size:24px;
+  font-weight:bold;
+  color:white
+}
+
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+
+
+
 
 /* Social Media Page*/
 
