@@ -516,6 +516,14 @@ overflow:hidden;
   margin: auto;
 }
 
+@media screen and (max-width: 600px) {
+  .tour-header{
+    width: 90%;
+    margin: auto;
+  }
+}
+
+
 .vid-slides{
   position: relative;
   width: 90%;
@@ -585,6 +593,11 @@ overflow:hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  max-width: 90%;
+  height: auto !important;
+  border: solid;
+  border-color: #f3a7ba;
 }
 
 

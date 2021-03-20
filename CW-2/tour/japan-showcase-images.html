@@ -6,7 +6,7 @@
     <link href="../CSS/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="../Image/icon.png">
-    <title>In Your Area 2019: Videos | BLACKPINK</title>
+    <title>Japan showcase: Images | BLACKPINK</title>
   </head>
 
   <body>
@@ -44,49 +44,53 @@
       </div>
     </div>
 
-    <div class="grid-container col-2a">
-      <section class="vid-slides">
-        <video id="slider" controls loop>
-          <source src="../Video/2019-tour.mp4" type="video/mp4">
-        </video>
-      </section>
+    <div class="responsive-gallery">
 
-      <ul class="slides-nav grid-container col-2b">
-        <h3>Kill This Love
-          <li onclick="videoURL('../Video/iya/kill-this-love.mp4')"><img src="../Image/iya/kill-this-love.jpg"></li>
-        </h3>
-        <h3>So Hot
-          <li onclick="videoURL('../Video/iya/so-hot.mp4')"><img src="../Image/iya/so-hot.jpg"></li>
-        </h3>
-        <h3>Kill This Love
-          <li onclick="videoURL('../Video/iya/kill-this-love2.mp4')"><img src="../Image/iya/kill-this-love2.jpg"></li>
-        </h3>
-        <h3>붐바야 (BOOMBAYAH)
-          <li onclick="videoURL('../Video/iya/boombayah.mp4')"><img src="../Image/iya/boombayah.jpg"></li>
-        </h3>
-        <h3>Kiss and Make Up
-          <li onclick="videoURL('../Video/iya/kamu.mp4')"><img src="../Image/iya/kamu.jpg"></li>
-        </h3>
-        <h3>See You Later
-          <li onclick="videoURL('../Video/iya/see-you-later.mp4')"><img src="../Image/iya/see-you-later.jpg"></li>
-        </h3>
-        <h3>DDU-DU DDU-DU Remix
-          <li onclick="videoURL('../Video/iya/ddu-du-remix.mp4')"><img src="../Image/iya/ddu-du-remix.jpg"></li>
-        </h3>
-        <h3>뚜두뚜두 (DDU-DU DDU-DU)
-          <li onclick="videoURL('../Video/iya/ddu-du-ddu-du.mp4')"><img src="../Image/iya/ddu-du-ddu-du.jpg"></li>
-        </h3>
-      </ul>
+      <img src="../Image/iya/in-your-area1.jpg" style="max-width:100%;cursor:pointer"
+      onclick="onClick(this)" class="modal-hover-opacity">
+
+      <img src="../Image/iya/in-your-area2.jpg" style="max-width:100%;cursor:pointer"
+      onclick="onClick(this)" class="modal-hover-opacity">
+
+      <img src="../Image/iya/in-your-area3.jpg" style="max-width:100%;cursor:pointer"
+      onclick="onClick(this)" class="modal-hover-opacity">
+
+      <img src="../Image/iya/in-your-area4.jpg" style="max-width:100%;cursor:pointer"
+      onclick="onClick(this)" class="modal-hover-opacity">
+
+      <img src="../Image/iya/in-your-area5.jpg" style="max-width:100%;cursor:pointer"
+      onclick="onClick(this)" class="modal-hover-opacity">
+
+      <img src="../Image/iya/in-your-area6.jpg" style="max-width:100%;cursor:pointer"
+      onclick="onClick(this)" class="modal-hover-opacity">
+
+      <img src="../Image/iya/in-your-area7.jpg" style="max-width:100%;cursor:pointer"
+      onclick="onClick(this)" class="modal-hover-opacity">
+
+      <img src="../Image/iya/in-your-area8.jpg" style="max-width:100%;cursor:pointer"
+      onclick="onClick(this)" class="modal-hover-opacity">
+
+      <img src="../Image/iya/in-your-area9.jpg" style="max-width:100%;cursor:pointer"
+      onclick="onClick(this)" class="modal-hover-opacity">
+
+      <img src="../Image/iya/in-your-area10.jpg" style="max-width:100%;cursor:pointer"
+      onclick="onClick(this)" class="modal-hover-opacity">
+
+      <img src="../Image/iya/in-your-area11.jpg" style="max-width:100%;cursor:pointer"
+      onclick="onClick(this)" class="modal-hover-opacity">
+
+    </div>
+
+    <div id="modal01" class="modal" onclick="this.style.display='none'">
+      <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <div class="modal-content">
+        <img id="img01" style="max-width:70vw; max-height:90vw;">
+      </div>
     </div>
 
 
-    <script type="text/javascript">
-      function videoURL(vidlink){
-        document.getElementById("slider").src = vidlink;
-      }
-    </script>
-
     <script src="../JS/navbar.js"></script>
+    <script src="../JS/image-popup.js"></script>
 
     <!-- Footer for the website-->
     <footer>
