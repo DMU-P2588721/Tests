@@ -445,6 +445,16 @@ overflow:hidden;
   transition:all 500ms ease-in-out;
 }
 
+.tour-item-inner2 {
+  background:rgba(0,0,0,0.25);
+  position:absolute;
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  transition:all 500ms ease-in-out;
+}
+
 .tour-details-wrapper{
   height:100%;
   display:table;
@@ -458,6 +468,10 @@ overflow:hidden;
   display:table-cell;
   vertical-align:middle;
   text-transform:uppercase;
+}
+
+.tour-item-inner2 > .tour-details-wrapper > .tour-sub-nav {
+  border: none !important;
 }
 
 .tour-title{
