@@ -53,32 +53,52 @@ header, section, aside, footer {
   overflow: hidden;
 }
 
+/*Grid container layouts for different sections*/
 .grid-container > div {
   text-align: center;
   font-size: 15px;
 }
 
 .col-2 , .col-2b{
-  grid-template-columns: 49% 49%;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .col-2a{
   grid-template-columns: 59% 39%;
 }
+
+.col-2c{
+  grid-template-columns: 19% 79%;
+  text-align: left !important;
+}
+
 .col-3{
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .col-4{
-  grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
+  grid-template-columns: repeat(4, 1fr);
 }
 
+.col-4a{
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/*Alternate Grid columns for samller screens*/
 @media screen and (max-width: 600px) {
   .col-2, .col-2a{
     grid-template-columns: 98% !important;
   }
+
+  .col-2c{
+    text-align: center !important;
+  }
   .col-3, .col-4{
     grid-template-columns: 49% 49% !important;
+  }
+
+  .col-4a{
+    grid-template-columns: 98% !important;
   }
 }
 
@@ -102,14 +122,27 @@ h3{
 
 
 /*The Navigation Bars and Links*/
+/*Removes Formatting on links*/
 a{
   text-decoration: none;
 }
 
-.navbar, nav{
+/*Background of navbar and no overflow*/
+.navbar{
   background-color: rgba(0, 0, 0, 0.0);
   overflow:hidden;
 }
+
+/*On larger screens, the navbar spans the page and is evenly spaced*/
+@media screen and (min-width: 600px){
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+/*Secondary navigation bar*/
 nav{
   display: flex;
   padding: auto;
@@ -118,14 +151,9 @@ nav{
 nav a {
   float: left;
   flex-grow: 1;
-  font-size: 15px
+  font-size: 15px !important;
 }
 
-@media screen and (max-width: 600px) {
-  nav a {
-    font-size: 3vw !important
-  }
-}
 
 .navbar a , nav a{
   float: left;
@@ -138,10 +166,12 @@ nav a {
   font-size: 17px;
 }
 
+/*Hides Navigation icon by defualt*/
 .navbar .icon {
   display: none;
 }
 
+/*On smaller screens, the navbar turns into a menu button*/
 @media screen and (max-width: 600px) {
   .navbar a:not(:first-child){
     display: none;
@@ -150,9 +180,6 @@ nav a {
     float: right;
     display: block;
   }
-}
-
-@media screen and (max-width: 600px) {
   .navbar.responsive {position: relative;}
   .navbar.responsive .icon {
     position: absolute;
@@ -167,10 +194,16 @@ nav a {
 }
 
 
-/*formats the title image*/
+/*formats the title image, automatic height and set width*/
 .title{
   height: auto;
-  width: 50%;
+  width: 30%;
+}
+
+@media screen and (max-width: 600px){
+  .title{
+    width: 45%;
+  }
 }
 
 /*margins and padding for the div sections*/
@@ -266,7 +299,7 @@ nav a {
   padding: 6px;
 }
 
-/*Layout for member and album*/
+/*Layout for info pages*/
 .item1 { grid-area: header; }
 .item2 { grid-area: image; }
 .item3 { grid-area: main; }
@@ -278,6 +311,7 @@ nav a {
   border-color: #F3A7BA;
 }
 
+/*Layout for member and album info pages*/
 .info-grid  {
   display: grid;
   grid-template-areas:
@@ -292,6 +326,7 @@ nav a {
   background-color: black;
 }
 
+/*Layout for tour info pages*/
 .info-grid2  {
   display: grid;
   grid-template-areas:
@@ -306,7 +341,6 @@ nav a {
 
 
 .info-grid , .info-grid2 > div {
-  background-color: rgba(255, 255, 255, 0.0);
   padding: 10px;
   font-size: 15px;
 }
@@ -338,6 +372,7 @@ nav a {
   padding-left: 10px;
 }
 
+/*On smaller screens, the layout for info grids stack on top of each other*/
 @media screen and (max-width: 600px) {
   .info-grid, .info-grid2 {
     grid-template-areas:
@@ -350,7 +385,6 @@ nav a {
     margin: 0 !important;
     padding: 5px;
   }
-
   .info-grid2 {
     grid-template-areas:
       'header'
@@ -703,16 +737,7 @@ overflow:hidden;
 
 
 
-
-
 /* Social Media Page*/
-
-@media screen and (max-width: 600px){
-  .tiles article > a{
-    font-size: 3vw !important;
-  }
-}
-
 .tiles article {
 	transition: transform 0.5s ease, opacity 0.5s ease;
   flex-grow: 1;
